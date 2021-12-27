@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login Form</title>
+    <style>
+        .fcontainer {
+            display: flex;
+            border: 1px solid #000;
+            /* flex-direction: row; */
+            height: 45vh;
+            /* justify-content: center;
+            align-items: center; */
+            /* flex-wrap: wrap; */
+        }
+
+        .fitem {
+            background: red;
+            margin: 12px;
+            height: 100px;
+            width: 100px;
+            border: solid 1px #000;
+        }
+
+        .item1 {
+            order: 3;
+            /* flex-grow: 3; */
+            flex-shrink: 2;
+            align-self: center;
+        }
+
+        .item4 {
+            order: 4;
+            /* flex-grow: 2; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fcontainer">
+        <div class="fitem item1">1</div>
+        <div class="fitem item2">2</div>
+        <div class="fitem item3">3</div>
+        <div class="fitem item4">4</div>
+    </div>
+</body>
+
+</html>

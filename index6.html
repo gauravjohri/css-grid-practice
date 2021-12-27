@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Custom Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 2fr 1fr;
+            border: 1px solid;
+            height: 100vh;
+            grid-gap: 0.2em;
+            grid-template-areas: "header header"
+                "sidebar content"
+                "footer footer"
+            ;
+            text-align: center;
+        }
+
+        .container>div {
+            border: 1px solid
+        }
+
+        .header {
+            grid-area: header
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .content {
+            grid-area: content;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            Header
+        </div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login Form</title>
+    <style>
+        .container {
+            background: grey;
+            display: flex;
+            height: 750px;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(#cc2b5e, #753a88);
+        }
+
+        .login-form {
+            background: rgb(255, 255, 255, 0.7);
+            padding: 10px;
+            width: 400px;
+            box-shadow: 20px 20px 100px;
+        }
+
+        .flex-input {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        [type="password"] {
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .flex-input label {
+            flex-basis: 130px;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            font-size: 20px;
+            padding: 10px;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            margin: 20px 0;
+        }
+
+        input[type="button"]:hover {
+            cursor: pointer;
+            background-color: rgb(98, 23, 168);
+        }
+
+        .login-form h1 {
+            color: blueviolet;
+        }
+
+        .flex-container {
+            display: flex;
+        }
+
+        .flex-container div {
+            flex: 1;
+        }
+
+        .flex-container a {
+            text-decoration: none;
+            color: blueviolet;
+        }
+
+        .flex-container a:hover {
+            text-decoration: underline;
+        }
+
+        @media all and (max-width:480px) {
+            .flex-input {
+                flex-direction: column;
+            }
+
+            label {
+                flex-basis: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="container">
+    <form action="" class="login-form">
+        <h1>Account Login</h1>
+        <div class="flex-input">
+            <label for="name">Username</label>
+            <input type="text" name="" id="name">
+        </div>
+        <div class="flex-input">
+            <label for="password">Password</label>
+            <input type="password" name="" id="password">
+        </div>
+        <div>
+            <input type="button" name="" value="LOGIN">
+        </div>
+        <div class="flex-container">
+            <div>
+                <input type="checkbox" name="" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <div style="text-align: right;">
+                <a href="">Forgot Password?</a>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flex Box Practice</title>
+    <style>
+        :root {
+            --main-font-family: cursive;
+        }
+
+        * {
+            font-family: var(--main-font-family);
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            color: white;
+            background: linear-gradient(#ffafbd, #ffc3a0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            flex-basis: 800px;
+        }
+
+        .logo {
+            flex: 1;
+            border: 1px solid;
+            height: 80px;
+            text-align: center;
+            align-self: center;
+        }
+
+        .header .navbar {
+            display: flex;
+            flex: 5;
+            align-self: flex-end;
+        }
+
+        .navbar>div {
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            flex-basis: 800px;
+        }
+
+        .container>div {
+            flex: 1;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 150px;
+            text-align: justify;
+            height: auto;
+            margin: 10px;
+            border: solid 1px steelblue;
+            border-radius: 10px;
+        }
+
+        .title {
+            padding: 10px;
+            font-size: 20px;
+            font-family: inherit;
+        }
+
+        .box .thumbnail {
+            height: 120px;
+            border: solid 1px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .button {
+            background: lightblue;
+            color: darkblue;
+            border: none;
+            padding: 10px;
+            border-radius: 5px 0 5px 0;
+            margin-top: 15px;
+            width: 150px;
+            align-self: flex-end;
+        }
+
+        .content {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <h2>Logo Here</h2>
+            <p>Logo Here</p>
+        </div>
+        <div class="navbar">
+            <div>Home</div>
+            <div>Home</div>
+            <div>Home</div>
+            <div>Home</div>
+        </div>
+    </div>
+    <div class="heading">
+        <h2>Posts</h2>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="thumbnail">
+                No Image
+            </div>
+            <div class="title">
+                Title
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, corporis.
+            </div>
+            <button class="button">Read More...</button>
+        </div>
+        <div class="box">
+            <div class="thumbnail">
+                No Image
+            </div>
+            <div class="title">
+                Title
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, corporis.
+            </div>
+            <button class="button">Read More...</button>
+        </div>
+        <div class="box">
+            <div class="thumbnail">
+                No Image
+            </div>
+            <div class="title">
+                Title
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, corporis.
+            </div>
+            <button class="button">Read More...</button>
+        </div>
+        <div class="box">
+            <div class="thumbnail">
+                No Image
+            </div>
+            <div class="title">
+                Title
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, corporis.
+            </div>
+            <button class="button">Read More...</button>
+        </div>
+        <div class="box">
+            <div class="thumbnail">
+                No Image
+            </div>
+            <div class="title">
+                Title
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, corporis.
+            </div>
+            <button class="button">Read More...</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
